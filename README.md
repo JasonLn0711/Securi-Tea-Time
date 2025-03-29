@@ -163,7 +163,7 @@ XiaomiCCTVProject/
 5. **Set Your LINE Notify Token:**
    - In `main.py` or `utils/line_notify.py`, update the token to:
      ```
-     c8weW9aAb14XsJoQg3LWOQ0N7aRicBenl5TcL4UCISd
+     'YOUR_LINE_NOTIFY_TOKEN_HERE'
      ```
 
 ---
