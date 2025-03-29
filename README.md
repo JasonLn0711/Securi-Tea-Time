@@ -1,101 +1,109 @@
-# Securi-Tea-Time
+# 🍵 Securi-Tea-Time
 
-**Securi-Tea-Time** is an intelligent, lightweight, real-time security solution that detects people and vehicles from a Xiaomi C400 CCTV camera feed using computer vision. The system mirrors an iPhone feed via QuickTime on macOS and uses YOLOv8 for object detection, OCR for license plate recognition, and clothing-color-based person re-identification. Events are logged automatically, snapshots are saved, and LINE notifications are sent with image attachments.
+**Securi-Tea-Time** is an intelligent, lightweight, real-time security system that detects people and vehicles from a Xiaomi C400 CCTV feed. It mirrors an iPhone camera feed via QuickTime on macOS and uses YOLOv8 for object detection, OCR for license plate recognition, and clothing-color-based person re-identification. Events are logged automatically, snapshots are saved, and LINE notifications are sent with image attachments.
 
-Developed as a side project by a graduate student at the College of Computer Science, National Yang Ming Chiao Tung University, this tool provides a cost-effective, plug-and-play surveillance system for homes, small communities, and smart security applications.
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Application Scenarios](#application-scenarios)
-- [Core Value of the Project](#core-value-of-the-project)
-- [Project Structure](#project-structure)
-- [Setup & Installation](#setup--installation)
-- [Usage](#usage)
-- [License](#license)
+🚀 Developed by a graduate student at National Yang Ming Chiao Tung University (NYCU), this project offers a plug-and-play solution for home, remote work, and small-business security—using just a phone and laptop.
 
 ---
 
-## Overview
+## 🧭 Table of Contents
 
-**Securi-Tea-Time** combines deep learning, computer vision, and system automation:
-
-- **Real-time detection**: Uses YOLOv8 to detect people and vehicles from a mirrored iPhone camera.
-- **Re-identification**: Identifies recurring individuals based on clothing color features.
-- **License Plate Recognition**: Applies EasyOCR to read and log vehicle license plates.
-- **Snapshot Logging**: Saves event snapshots locally with timestamps.
-- **CSV Recordkeeping**: Structured logging of each detection including object type, time, and confidence.
-- **LINE Notify Alerts**: Sends LINE messages with snapshot images when people or vehicles are detected.
-- **Optimized Performance**: Frame skipping, resizing, and optional GPU (MPS) acceleration on Apple Silicon.
+- [📌 Overview](#-overview)
+- [🏘️ Application Scenarios](#-application-scenarios)
+- [💎 Core Value of the Project](#-core-value-of-the-project)
+- [🗂️ Project Structure](#-project-structure)
+- [⚙️ Setup & Installation](#-setup--installation)
+- [▶️ Usage](#-usage)
+- [📝 License](#-license)
 
 ---
 
-## Application Scenarios
+## 📌 Overview
 
-### Home Security Monitoring
+**Securi-Tea-Time** blends deep learning, computer vision, and automation into a cohesive real-time system:
 
-**Problems:**
-- Inability to monitor constantly
-- Concern about unauthorized entries or unnoticed incidents
-
-**Solutions:**
-- YOLOv8-based person detection with LINE alerts
-- Clothing-based re-ID to distinguish known individuals
-- Low-cost, 100% automated setup
-
-### Community or Small Parking Lot Management
-
-**Problems:**
-- Difficulty identifying vehicles
-- Manual logging is unreliable
-
-**Solutions:**
-- Automated detection + OCR-based plate recognition
-- Snapshot and CSV logging for each vehicle
-
-### SOHO or Remote Work Home Protection
-
-**Problems:**
-- No real-time awareness of outside activity
-- Concerns over false alarms caused by pets
-
-**Solutions:**
-- Human-only detection (filters out animals)
-- Notifications with visual context
-
-### Patrolling and Smart Security Applications
-
-**Problems:**
-- High cost of traditional smart surveillance systems
-- Night shift or off-hour vulnerabilities
-
-**Solutions:**
-- Real-time alerting with no human intervention
-- Zero extra hardware beyond a phone and laptop
-
-### Value-Added Data Collection & Analysis
-
-- Detect recurring appearances (people or cars)
-- Analyze behavioral or traffic patterns
-- Prepare data for advanced AI-based security optimization
+- 🧠 **Real-time YOLOv8 detection** for people and vehicles
+- 🧍 **Person re-ID** via clothing color (top/bottom)
+- 🚘 **License plate recognition** using EasyOCR
+- 📸 **Snapshot saving** with timestamps
+- 📊 **CSV-based event logging** with object type, ID, time, and confidence
+- 🔔 **LINE Notify integration** for real-time alerts with image attachments
+- ⚡ **Optimized performance** via frame skipping, resizing, and MPS acceleration (macOS)
 
 ---
 
-## Core Value of the Project
+## 🏘️ Application Scenarios
 
-| Life Scenario               | Problem                                                        | Solution and Value                                               |
-|----------------------------|----------------------------------------------------------------|------------------------------------------------------------------|
-| Home Security Monitoring    | Unknown individuals entering undetected                        | YOLO detection + LINE notifications + snapshot evidence          |
-| Parking Lot Management      | No license plate records or searchable history                | Plate recognition + CSV logs                                     |
-| Remote Work or Living Solo | No one to alert in emergencies                                 | Real-time LINE alerts + snapshots                                |
-| Budget Constraints          | Can't afford commercial smart security systems                | Works with just iPhone + MacBook                                 |
-| Future Data Applications    | Want structured data for model training                        | Event log + image archive foundation                             |
+### 🏠 Home Security Monitoring
+
+**😟 Problems:**
+- Can’t monitor 24/7
+- Missed intrusions or family-related incidents
+
+**💡 Solutions:**
+- Human detection + LINE alerts
+- Person re-ID distinguishes family members
+- Snapshot logs = proof & tracking
 
 ---
 
-## Project Structure
+### 🅿️ Community or Parking Lot Management
+
+**😟 Problems:**
+- Can’t identify vehicle entries
+- No searchable plate history
+
+**💡 Solutions:**
+- Vehicle detection + plate OCR
+- Snapshot & CSV logs for each vehicle
+
+---
+
+### 🏡 SOHO / Remote Work Protection
+
+**😟 Problems:**
+- No awareness of nearby threats
+- False alarms from pets
+
+**💡 Solutions:**
+- Human-only detection (excludes animals)
+- Verified LINE alert with snapshot
+
+---
+
+### 🛍️ Small Business / Night Patrolling
+
+**😟 Problems:**
+- No staff on duty during nights
+- Can’t afford expensive smart cameras
+
+**💡 Solutions:**
+- YOLO detection + auto alerts
+- No extra hardware needed
+
+---
+
+### 📈 Value-Added Data Collection
+
+- Identify repeat visitors or parked vehicles
+- Log patterns and activity trends
+- Build datasets for future training or automation
+
+---
+
+## 💎 Core Value of the Project
+
+| 🏷️ Life Scenario               | 😟 Problem                                              | ✅ Solution & Value                                            |
+|------------------------------|----------------------------------------------------------|---------------------------------------------------------------|
+| 🏠 Home Security             | Undetected strangers entering the home                  | YOLO detection + LINE alerts + photo proof                   |
+| 🅿️ Parking Management        | No license plate records                                | Plate OCR + searchable CSV history                           |
+| 👤 Living Alone / Remote Work| No one to respond during emergencies                    | Real-time image alerts to LINE                               |
+| 💸 Budget Constraints         | Can't afford enterprise-grade surveillance             | iPhone + MacBook = full system                               |
+| 🔍 Behavior Tracking          | Want structured data for security optimization         | Rich log of events with snapshots                            |
+
+---
+
+## 🗂️ Project Structure
 
 ```
 Securi-Tea-Time/
@@ -111,63 +119,68 @@ Securi-Tea-Time/
     └── line_notify.py
 ```
 
-- `main.py`: Entry point with live detection and automation
-- `config.yaml`: All user settings: screen region, model type, token, etc.
-- `async_saver.py`: Multithreaded snapshot, logging, OCR, and LINE tasks
-- `person_reid.py`: Extracts color-based features to identify recurring people
-- `plate_recognition.py`: Recognizes license plate text using EasyOCR
-- `line_notify.py`: Sends alert messages and images to LINE
+- 🧠 `main.py`: Live screen capture, YOLO detection, logging, and alerting
+- ⚙️ `config.yaml`: All user-defined settings (model, cooldown, screen region)
+- 🧵 `async_saver.py`: Threads for saving images, CSVs, OCR, and LINE alerts
+- 🧍 `person_reid.py`: Assigns person IDs based on clothing color
+- 🔡 `plate_recognition.py`: License plate OCR using EasyOCR
+- 📬 `line_notify.py`: Sends LINE messages with snapshot attachments
 
 ---
 
-## Setup & Installation
+## ⚙️ Setup & Installation
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/<your-username>/Securi-Tea-Time.git
-   cd Securi-Tea-Time
-   ```
+### 1. 🔽 Clone the Repo
+```bash
+git clone https://github.com/JasonLn0711/Securi-Tea-Time.git
+cd Securi-Tea-Time
+```
 
-2. **Create a Virtual Environment & Install Requirements**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # macOS/Linux
-   pip install -r requirements.txt
-   ```
+### 2. 🧪 Set Up Virtual Environment
+```bash
+python3 -m venv venv
+source venv/bin/activate  # for macOS/Linux
+pip install -r requirements.txt
+```
 
-3. **Mirror iPhone to Mac via QuickTime**
-   - Connect your iPhone via USB
-   - Open **QuickTime > File > New Movie Recording**
-   - Select iPhone as the camera source
+### 3. 📱 Mirror iPhone via QuickTime
+- Open **QuickTime > File > New Movie Recording**
+- Select your iPhone as the camera
+- (Don’t record — just leave the live feed on screen)
 
-4. **Update Config File**
-   - Open `config.yaml`
-   - Adjust the `monitor` values to match your QuickTime window position
-   - Insert your LINE Notify token
+### 4. 🛠️ Configure Settings
+- Open `config.yaml`
+- Adjust `monitor:` region to match QuickTime window
+- Add your LINE token to `line_token:`
 
-5. **Run Detection**
-   ```bash
-   python main.py
-   ```
-
----
-
-## Usage
-
-The system will:
-- Capture screen region (QuickTime window showing Xiaomi C400 feed)
-- Detect people and vehicles using YOLOv8
-- Re-identify recurring persons based on clothing
-- Recognize license plates with OCR
-- Log all events with timestamps in a CSV file
-- Send LINE alerts with snapshot images
-
-> Press `q` to quit the live display window
+### 5. ▶️ Run the System
+```bash
+python main.py
+```
 
 ---
 
-## License
+## ▶️ Usage
 
+The system will automatically:
+
+✅ Capture live video from QuickTime (iPhone mirrored feed)  
+✅ Detect people and vehicles using YOLOv8  
+✅ Re-identify persons by clothing color (top + bottom)  
+✅ Recognize car plates with OCR  
+✅ Save each detection as a snapshot  
+✅ Log every event into a CSV file with timestamp + info  
+✅ Send real-time LINE notifications with attached image
+
+> Press `q` in the display window to quit.
+
+---
+
+## 📝 License
+
+**MIT License**
+
+```
 MIT License
 
 Copyright (c) 2025 JasonLn0711
@@ -189,8 +202,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
 
 ---
 
-Feel free to fork, improve, or reach out with suggestions — your ideas are always welcome!
+💬 *Contributions and feedback are always welcome!*
 
