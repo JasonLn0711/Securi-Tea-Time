@@ -12,8 +12,8 @@
 - [💎 Core Value of the Project](#-core-value-of-the-project)
 - [🗂️ Project Structure](#-project-structure)
 - [⚙️ Setup & Installation](#-setup--installation)
-- [🏘️ Application Scenarios](#-application-scenarios)
 - [▶️ Usage](#-usage)
+- [🏘️ Application Scenarios](#-application-scenarios)
 - [📝 License](#-license)
 
 ---
@@ -101,6 +101,22 @@ python main.py
 
 ---
 
+## ▶️ Usage
+
+The system will automatically:
+
+✅ Capture live video from QuickTime (iPhone mirrored feed)  
+✅ Detect people and vehicles using YOLOv8  
+✅ Re-identify persons by clothing color (top + bottom)  
+✅ Recognize car plates with OCR  
+✅ Save each detection as a snapshot  
+✅ Log every event into a CSV file with timestamp + info  
+✅ Send real-time LINE notifications with attached image
+
+> Press `q` in the display window to quit.
+
+---
+
 ## 🏘️ Application Scenarios
 
 ### 🏠 Home Security Monitoring
@@ -157,22 +173,6 @@ python main.py
 - Identify repeat visitors or parked vehicles
 - Log patterns and activity trends
 - Build datasets for future training or automation
-
----
-
-## ▶️ Usage
-
-The system will automatically:
-
-✅ Capture live video from QuickTime (iPhone mirrored feed)  
-✅ Detect people and vehicles using YOLOv8  
-✅ Re-identify persons by clothing color (top + bottom)  
-✅ Recognize car plates with OCR  
-✅ Save each detection as a snapshot  
-✅ Log every event into a CSV file with timestamp + info  
-✅ Send real-time LINE notifications with attached image
-
-> Press `q` in the display window to quit.
 
 ---
 
