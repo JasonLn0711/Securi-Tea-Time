@@ -9,10 +9,10 @@
 ## 🧭 Table of Contents
 
 - [📌 Overview](#-overview)
-- [🏘️ Application Scenarios](#-application-scenarios)
 - [💎 Core Value of the Project](#-core-value-of-the-project)
 - [🗂️ Project Structure](#-project-structure)
 - [⚙️ Setup & Installation](#-setup--installation)
+- [🏘️ Application Scenarios](#-application-scenarios)
 - [▶️ Usage](#-usage)
 - [📝 License](#-license)
 
@@ -29,65 +29,6 @@
 - 📊 **CSV-based event logging** with object type, ID, time, and confidence
 - 🔔 **LINE Notify integration** for real-time alerts with image attachments
 - ⚡ **Optimized performance** via frame skipping, resizing, and MPS acceleration (macOS)
-
----
-
-## 🏘️ Application Scenarios
-
-### 🏠 Home Security Monitoring
-
-**😟 Problems:**
-- Can’t monitor 24/7
-- Missed intrusions or family-related incidents
-
-**💡 Solutions:**
-- Human detection + LINE alerts
-- Person re-ID distinguishes family members
-- Snapshot logs = proof & tracking
-
----
-
-### 🅿️ Community or Parking Lot Management
-
-**😟 Problems:**
-- Can’t identify vehicle entries
-- No searchable plate history
-
-**💡 Solutions:**
-- Vehicle detection + plate OCR
-- Snapshot & CSV logs for each vehicle
-
----
-
-### 🏡 SOHO / Remote Work Protection
-
-**😟 Problems:**
-- No awareness of nearby threats
-- False alarms from pets
-
-**💡 Solutions:**
-- Human-only detection (excludes animals)
-- Verified LINE alert with snapshot
-
----
-
-### 🛍️ Small Business / Night Patrolling
-
-**😟 Problems:**
-- No staff on duty during nights
-- Can’t afford expensive smart cameras
-
-**💡 Solutions:**
-- YOLO detection + auto alerts
-- No extra hardware needed
-
----
-
-### 📈 Value-Added Data Collection
-
-- Identify repeat visitors or parked vehicles
-- Log patterns and activity trends
-- Build datasets for future training or automation
 
 ---
 
@@ -157,6 +98,65 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
+---
+
+## 🏘️ Application Scenarios
+
+### 🏠 Home Security Monitoring
+
+**😟 Problems:**
+- Can’t monitor 24/7
+- Missed intrusions or family-related incidents
+
+**💡 Solutions:**
+- Human detection + LINE alerts
+- Person re-ID distinguishes family members
+- Snapshot logs = proof & tracking
+
+---
+
+### 🅿️ Community or Parking Lot Management
+
+**😟 Problems:**
+- Can’t identify vehicle entries
+- No searchable plate history
+
+**💡 Solutions:**
+- Vehicle detection + plate OCR
+- Snapshot & CSV logs for each vehicle
+
+---
+
+### 🏡 SOHO / Remote Work Protection
+
+**😟 Problems:**
+- No awareness of nearby threats
+- False alarms from pets
+
+**💡 Solutions:**
+- Human-only detection (excludes animals)
+- Verified LINE alert with snapshot
+
+---
+
+### 🛍️ Small Business / Night Patrolling
+
+**😟 Problems:**
+- No staff on duty during nights
+- Can’t afford expensive smart cameras
+
+**💡 Solutions:**
+- YOLO detection + auto alerts
+- No extra hardware needed
+
+---
+
+### 📈 Value-Added Data Collection
+
+- Identify repeat visitors or parked vehicles
+- Log patterns and activity trends
+- Build datasets for future training or automation
 
 ---
 
