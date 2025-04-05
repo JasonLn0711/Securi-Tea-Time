@@ -1,0 +1,6 @@
+opencv-python
+ultralytics         # For YOLOv8 object detection (or use a specific YOLOv8 package)
+pytesseract
+Pillow
+PyYAML
+requests

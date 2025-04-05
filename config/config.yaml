@@ -1,0 +1,16 @@
+camera:
+  source: 0         # Update with your actual video source or device ID
+
+detection:
+  model_path: "yolov8s.pt"
+  conf_threshold: 0.5
+
+ocr:
+  tesseract_cmd: "/usr/local/bin/tesseract"  # Update if needed
+
+notification:
+  line_notify_token: "c8weW9aAb14XsJoQg3LWOQ0N7aRicBenl5TcL4UCISd"
+
+logging:
+  snapshot_dir: "data/snapshots/"
+  log_dir: "data/logs/"
